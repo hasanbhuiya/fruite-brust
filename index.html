@@ -60,7 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="navbar-end pe-5">
+          <div class="navbar-end lg:pe-5">
             <div class="form-control">
               <button class="btn rounded-full bg-white hidden lg:flex md:flex ">
                 <input type="text" placeholder="Search" class="w-60 h-8 rounded px-4" />
@@ -83,17 +83,16 @@
           </div>
         </div>
     <!-- banner section  -->
-
-    <div class="carousel w-full">
-      <div id="slide1" class="carousel-item relative w-full">
+    <div class="carousel w-full relative">
+      <div id="slide1" class="carousel-item relative w-full md:h-[550px] lg:h-[650px]">
         <!-- slide 1 -->
-        <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+        <div class="hero" style="background-image: url(images/banner1.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
               <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
               <p class="text-center text-xs text-slate-300">We supply highly quality organic products</p>
-              <button class="btn color-bg mt-5 border-none hover:bg-slate-700 text-white">Shop Now</button>
+              <button class="btn color-bg mt-5 border-none hover:bg-slate-700 text-white">Shop Now</button>        
             </div>
           </div>
         </div>
@@ -104,7 +103,7 @@
       </div> 
       <!-- slide 2 -->
       <div id="slide2" class="carousel-item relative w-full">
-        <div class="hero min-h-screen" style="background-image: url(images/banner2.png);">
+        <div class="hero" style="background-image: url(images/banner2.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -121,7 +120,7 @@
       </div> 
       <!-- slide 3 -->
       <div id="slide3" class="carousel-item relative w-full">
-        <div class="hero min-h-screen" style="background-image: url(images/banner3.png);">
+        <div class="hero" style="background-image: url(images/banner3.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -138,7 +137,7 @@
       </div> 
       <!-- slide4 -->
       <div id="slide4" class="carousel-item relative w-full">
-        <div class="hero min-h-screen" style="background-image: url(images/banner4.png);">
+        <div class="hero" style="background-image: url(images/banner4.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -154,17 +153,44 @@
         </div>
       </div>
     </div>
+    <!-- banner bottom -->
+
+    <div class="flex justify-center -mt-24 hidden lg:flex"> 
+      <div class="flex gap-5 justify-around shadow w-3/4 absolute bg-white py-2 rounded-lg">
+        <div class="flex items-center gap-3 flex-col">
+          <img src="images/fruit1.png" alt="">
+          <h3>Strawberry</h3>
+        </div>
+        <div class="flex items-center gap-3 flex-col">
+          <img src="images/fruit2.png" alt="">
+          <h3>Orange</h3>
+        </div>
+        <div class="flex items-center gap-3 flex-col">
+          <img src="images/fruit3.png" alt="">
+          <h3>Mango</h3>
+        </div>
+        <div class="flex items-center gap-3 flex-col">
+          <img src="images/fruit4.png" alt="">
+          <h3>Strawberry</h3>
+        </div>
+        <div class="flex items-center gap-3 flex-col">
+          <img src="images/fruit5.png" alt="">
+          <h3>Pomegranate</h3>
+        </div>
+      </div>
+      </div>
+    </div>
     </header>
     <!-- main section  -->
-    <main class="container mx-auto">
+    <main class="container mx-auto mt-20">
       <!-- deal of the day section  -->
-        <section class="pt-40 px-5">
+        <section class="lg:pt-60 px-5">
           <div class="lg:flex justify-between">
             <div class="p5">
               <h2 class="text-5xl font-extrabold text-center lg:text-left">Deal of the day</h2>
-              <p class="max-w-xl mt-5 lg:text-start text-center md:mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              <p class="max-w-xl my-5 lg:text-start text-center md:mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="mt-16 grid grid-flow-col gap-5 text-center justify-center lg:justify-end auto-cols-max">
+            <div class=" grid grid-flow-col gap-5 text-center justify-center lg:justify-end auto-cols-max">
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl font-extrabold">
                   <span style="--value:15;"></span>
@@ -408,40 +434,40 @@
                   <img style="width:140px;" src="images/member1.png" alt="">
                   <h3 class="text-lg mt-5">Awlad Hossain</h3>
                   <h4 class="py-3">Fruits Expert</h4>
-                  <div class="flex gap-5 justify-center">
-                    <p><i class="text-white fa-brands fa-facebook-f"></i></p>
-                    <p><i class="text-white fa-brands fa-twitter"></i></p>
-                    <p><i class="text-white fa-brands fa-linkedin-in"></i></p>
+                  <div class="flex gap-3 justify-center">
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-facebook"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-twitter"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-linkedin-in"></i></p>
                   </div>
                 </div>
                 <div class="flex flex-col justify-center items-center pb-6">
                   <img src="images/member2.png" alt="">
                   <h3 class="text-lg mt-5">Safia Chowdhury</h3>
                   <h4 class="py-3">Fruits Expert</h4>
-                  <div class="flex gap-5 justify-center">
-                    <p><i class="text-white fa-brands fa-facebook-f"></i></p>
-                    <p><i class="text-white fa-brands fa-twitter"></i></p>
-                    <p><i class="text-white fa-brands fa-linkedin-in"></i></p>
+                  <div class="flex gap-3 justify-center">
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-facebook"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-twitter"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-linkedin-in"></i></p>
                   </div>
                 </div>
                 <div class="flex flex-col justify-center items-center pb-6">
                   <img src="images/member3.png" alt="">
                   <h3 class="text-lg mt-5">Rakib Hossain</h3>
                   <h4 class="py-3">Fruits Expert</h4>
-                  <div class="flex gap-5 justify-center">
-                    <p><i class="text-white fa-brands fa-facebook-f"></i></p>
-                    <p><i class="text-white fa-brands fa-twitter"></i></p>
-                    <p><i class="text-white fa-brands fa-linkedin-in"></i></p>
+                  <div class="flex gap-3 justify-center">
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-facebook"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-twitter"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-linkedin-in"></i></p>
                   </div>
                 </div>
                 <div class="flex flex-col justify-center items-center pb-6">
                   <img src="images/member4.png" alt="">
                   <h3 class="text-lg mt-5">Chaity</h3>
                   <h4 class="py-3">Fruits Expert</h4>
-                  <div class="flex gap-5 justify-center">
-                    <p><i class="text-white fa-brands fa-facebook-f"></i></p>
-                    <p><i class="text-white fa-brands fa-twitter"></i></p>
-                    <p><i class="text-white fa-brands fa-linkedin-in"></i></p>
+                  <div class="flex gap-3 justify-center">
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-facebook"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-twitter"></i></p>
+                    <p class="flex items-center justify-center p-3 rounded-full hover:bg-slate-700 duration-300 bg-red-400"><i class="text-white fa-brands fa-linkedin-in"></i></p>
                   </div>
                 </div>
               </div>
@@ -470,7 +496,7 @@
                   <div class="flex items-baseline">
                     <i class="p-5 fa-solid fa-user-group"></i>
                     <div>
-                      <h3 class="text-sm">Dedicated Team</h3>
+                      <h3 class="text-sm">Fresh is Best</h3>
                       <hr class="w-16 h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
                       <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
@@ -479,7 +505,7 @@
                   <div class="flex items-baseline">
                     <i class="p-5 fa-solid fa-user-group"></i>
                     <div>
-                      <h3 class="text-sm">Dedicated Team</h3>
+                      <h3 class="text-sm">Gift Certificates</h3>
                       <hr class="w-16 h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
                       <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
@@ -494,7 +520,7 @@
                 <div class="flex items-baseline flex-row-reverse text-end mt-3">
                   <i class="p-5 fa-solid fa-user-group"></i>
                   <div class="flex items-end flex-col">
-                    <h3 class="text-sm">Dedicated Team</h3>
+                    <h3 class="text-sm">Integrated Supplier</h3>
                     <hr class="w-16 h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
                     <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
@@ -503,7 +529,7 @@
                 <div class="flex items-baseline flex-row-reverse text-end">
                   <i class="p-5 fa-solid fa-user-group"></i>
                   <div class="flex items-end flex-col">
-                    <h3 class="text-sm">Dedicated Team</h3>
+                    <h3 class="text-sm">Sustainable Practice</h3>
                     <hr class="w-16 h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
                     <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
@@ -512,7 +538,7 @@
                 <div class="flex items-baseline flex-row-reverse text-end">
                   <i class="p-5 fa-solid fa-user-group"></i>
                   <div class="flex items-end flex-col">
-                    <h3 class="text-sm">Dedicated Team</h3>
+                    <h3 class="text-sm">The Benefits Only</h3>
                     <hr class="w-16 h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
                     <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
@@ -543,9 +569,9 @@
 
       <div class="flex justify-center">
         <div class="grid grid-cols-3 gap-10">
-          <a href="#"><i class=" hover:text-slate-800 text-3xl text-white fa-brands fa-facebook"></i></a>
-          <a href="#"><i class=" hover:text-slate-800 text-3xl text-white fa-brands fa-square-twitter"></i></a>
-          <a href="#"><i class=" hover:text-slate-800 text-3xl text-white fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class=" duration-500 hover:text-slate-800 text-3xl text-white fa-brands fa-facebook"></i></a>
+          <a href="#"><i class=" duration-500 hover:text-slate-800 text-3xl text-white fa-brands fa-square-twitter"></i></a>
+          <a href="#"><i class=" duration-500 hover:text-slate-800 text-3xl text-white fa-brands fa-linkedin"></i></a>
         </div>
       </div>
     </footer>
